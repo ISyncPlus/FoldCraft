@@ -24,9 +24,9 @@ export function Home() {
           <div className="hero-bottom">
             <div>
               <p>We turn ideas into identities, experiences, and moving images that feel impossible to ignore.</p>
-              <a href="#/projects" className="hero-cta">Explore work <ArrowUpRight size={18} /></a>
+              <a href="/projects" className="hero-cta">Explore work <ArrowUpRight size={18} /></a>
             </div>
-            <a className="hero-scroll" href="#/projects" aria-label="Explore projects">
+            <a className="hero-scroll" href="/projects" aria-label="Explore projects">
               Scroll to explore <ArrowDown size={16} />
             </a>
           </div>
@@ -56,7 +56,7 @@ export function Home() {
           <div className="intro-bottom">
             <span className="intro-coordinate">ALWAYS CURIOUS / OPEN TO EVERYWHERE</span>
             <Reveal><p>Foldcraft is an independent creative studio working where strategy, design, and motion meet. We build expressive worlds for ambitious ideas, from the first sketch to the final frame.</p></Reveal>
-            <ArrowLink href="#/studio">Meet the studio</ArrowLink>
+            <ArrowLink href="/studio">Meet the studio</ArrowLink>
           </div>
         </section>
 
@@ -69,7 +69,7 @@ export function Home() {
           <div className="project-grid">
             {projects.slice(0, 2).map((project, index) => <ProjectCard key={project.name} project={project} index={index} />)}
           </div>
-          <div className="work-more"><ArrowLink href="#/projects">See all projects</ArrowLink></div>
+          <div className="work-more"><ArrowLink href="/projects">See all projects</ArrowLink></div>
         </section>
 
         <section className="services section-pad">
@@ -98,7 +98,7 @@ export function Home() {
           <div className="contact-band-inner">
             <span>Have something in mind?</span>
             <h2>Let's unfold<br /><em>something new.</em></h2>
-            <a href="#/contact">Start a conversation <ArrowUpRight size={19} /></a>
+            <a href="/contact">Start a conversation <ArrowUpRight size={19} /></a>
           </div>
           <span className="contact-band-index">THE NEXT CHAPTER STARTS HERE / 004</span>
         </section>

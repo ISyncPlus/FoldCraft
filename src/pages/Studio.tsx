@@ -42,7 +42,7 @@ export function Studio() {
         <section className="next-page section-pad">
           <span>Seen enough?</span>
           <h2>Now let's make<br /><em>something together.</em></h2>
-          <ArrowLink href="#/contact">Get in touch</ArrowLink>
+          <ArrowLink href="/contact">Get in touch</ArrowLink>
         </section>
       </main>
       <Footer />

@@ -7,7 +7,7 @@ export function Footer() {
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Foldcraft Studio</span>
         <span>Independent by design.</span>
-        <a href="#/">Back to top ↑</a>
+        <a href="/">Back to top ↑</a>
       </div>
     </footer>
   )

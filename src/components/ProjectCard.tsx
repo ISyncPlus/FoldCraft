@@ -11,7 +11,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <Reveal delay={index * 100} className="project-card">
-      <a href="#/projects" aria-label={`View ${project.name} project`}>
+      <a href="/projects" aria-label={`View ${project.name} project`}>
         <div className="project-image">
           <ProjectArt art={project.art} />
           <span className="project-hover">Explore<br />concept <ArrowUpRight size={20} /></span>

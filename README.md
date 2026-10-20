@@ -127,10 +127,10 @@ Foldcraft uses a lightweight, typed hash router implemented in `src/hooks/useRou
 
 | View | Route |
 |---|---|
-| Home | `#/` |
-| Projects | `#/projects` |
-| Studio | `#/studio` |
-| Reach Us | `#/contact` |
+| Home | `/` |
+| Projects | `/projects` |
+| Studio | `/studio` |
+| Reach Us | `/contact` |
 
 Hash routing keeps deployment simple because every view is served from the same HTML document and does not require server-side rewrite rules.
 

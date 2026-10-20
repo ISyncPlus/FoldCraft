@@ -26,11 +26,11 @@ export function NavBar({ route, light = false }: NavBarProps) {
           <Logo light={light || open} />
           <nav className="desktop-nav" aria-label="Main navigation">
             {navItems.map(({ label, href }) => (
-              <a key={href} href={`#${href}`} className={route === href ? 'active' : ''}>{label}</a>
+              <a key={href} href={href} className={route === href ? 'active' : ''}>{label}</a>
             ))}
           </nav>
         </div>
-        <a href="#/contact" className={`nav-talk ${light ? 'nav-talk-light' : 'nav-talk-dark'}`}>
+        <a href="/contact" className={`nav-talk ${light ? 'nav-talk-light' : 'nav-talk-dark'}`}>
           Let's Talk <ArrowUpRight size={15} strokeWidth={1.8} />
         </a>
         <button
@@ -50,14 +50,14 @@ export function NavBar({ route, light = false }: NavBarProps) {
           {navItems.map(({ label, href }, index) => (
             <a
               key={href}
-              href={`#${href}`}
+              href={href}
               onClick={() => setOpen(false)}
               style={{ transitionDelay: open ? `${110 + index * 65}ms` : '0ms' }}
             >
               {label}<ArrowUpRight size={22} />
             </a>
           ))}
-          <a className="mobile-contact" href="#/contact" onClick={() => setOpen(false)}>
+          <a className="mobile-contact" href="/contact" onClick={() => setOpen(false)}>
             Start a project <ArrowRight size={18} />
           </a>
         </nav>

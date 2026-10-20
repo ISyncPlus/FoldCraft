@@ -44,7 +44,7 @@ export function Projects() {
           <h2><span>Bring your idea</span><em>into focus.</em></h2>
           <div className="project-outro-bottom">
             <p>Start with the unfinished version.<br />We’ll find the shape together.</p>
-            <a href="#/contact" className="project-outro-link">
+            <a href="/contact" className="project-outro-link">
               <span>Start a project</span><ArrowUpRight size={27} strokeWidth={1.4} />
             </a>
           </div>
