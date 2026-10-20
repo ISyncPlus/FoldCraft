@@ -1,0 +1,22 @@
+{
+  "name": "foldcraft-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lucide-react": "1.33.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
+    "autoprefixer": "10.4.24",
+    "postcss": "8.5.31",
+    "tailwindcss": "3.4.19",
+    "vite": "6.4.4"
+  }
+}
