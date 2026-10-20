@@ -123,7 +123,7 @@ The optimized output is written to `dist/`.
 
 ## ↗ Routes
 
-Foldcraft uses a lightweight hash router implemented in `src/main.jsx`.
+Foldcraft uses a lightweight, typed hash router implemented in `src/hooks/useRoute.ts` and composed in `src/App.tsx`.
 
 | View | Route |
 |---|---|
@@ -141,8 +141,14 @@ Foldcraft/
 ├── public/
 │   └── hero.mp4           # Local background video
 ├── src/
+│   ├── components/        # Shared navigation, UI, and project visuals
+│   ├── data/              # Typed navigation, project, and studio content
+│   ├── hooks/             # Hash route state
+│   ├── pages/             # Home, Projects, Studio, and Contact views
+│   ├── types/             # Shared TypeScript models
+│   ├── App.tsx            # Route composition and document titles
 │   ├── index.css          # Layout, responsive system, artwork, and motion
-│   └── main.jsx           # Content, components, routes, and interactions
+│   └── main.tsx           # React entry point
 ├── dist/                  # Generated production build
 ├── index.html             # Metadata, Geist font, and React mount point
 ├── package.json           # Scripts and dependencies
@@ -188,7 +194,7 @@ React manages view state and interaction. CSS handles the visual compositions, r
 
 ### Studio name and navigation
 
-Edit `Logo`, `nav`, and `NavBar` in `src/main.jsx`.
+Edit `src/components/Logo.tsx`, `src/components/NavBar.tsx`, and `src/data/site.ts`.
 
 ### Hero video
 
@@ -198,13 +204,13 @@ Replace:
 public/hero.mp4
 ```
 
-Keep the filename, or update `videoUrl` near the top of `src/main.jsx`. The video is configured with `autoPlay`, `muted`, `loop`, and `playsInline` for background playback.
+Keep the filename, or update `videoUrl` in `src/data/site.ts`. The video is configured with `autoPlay`, `muted`, `loop`, and `playsInline` for background playback.
 
 For good loading performance, export a web-optimized MP4 with a reasonable bitrate and dimensions appropriate for a full-screen background.
 
 ### Project studies
 
-Update the `projects` array near the top of `src/main.jsx`:
+Update the typed `projects` array in `src/data/site.ts`:
 
 ```js
 {
@@ -223,7 +229,7 @@ The `art` value maps to a variant inside `ProjectArt` and its matching CSS selec
 
 ### Contact email
 
-Change the `email` constant near the top of `src/main.jsx`.
+Change the `email` constant in `src/data/site.ts`.
 
 > [!IMPORTANT]
 > `hello@foldcraft.studio` is currently a placeholder assumption. Replace it with a monitored business address before public release.
