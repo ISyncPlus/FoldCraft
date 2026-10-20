@@ -23,7 +23,7 @@ export function Contact() {
       <NavBar route="/contact" />
       <main>
         <PageIntro
-          eyebrow="03 / Reach us"
+          eyebrow="Start with a hello"
           title={<>Great things begin<br />with <em>a conversation.</em></>}
           description="Have a brand to build, a story to tell, or an idea still taking shape? We'd love to hear it."
         />

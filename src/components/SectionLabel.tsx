@@ -1,10 +1,9 @@
 import type { ReactNode } from 'react'
 
 interface SectionLabelProps {
-  number: string
   children: ReactNode
 }
 
-export function SectionLabel({ number, children }: SectionLabelProps) {
-  return <div className="section-label"><span>{number}</span><span>{children}</span></div>
+export function SectionLabel({ children }: SectionLabelProps) {
+  return <div className="section-label"><span aria-hidden="true" /><span>{children}</span></div>
 }

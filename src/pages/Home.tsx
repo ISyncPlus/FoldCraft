@@ -51,7 +51,7 @@ export function Home() {
         </div>
 
         <section className="intro section-pad">
-          <SectionLabel number="01 /">A little about us</SectionLabel>
+          <SectionLabel>Behind the fold</SectionLabel>
           <Reveal><h2>We believe the best ideas <span>make you feel something.</span></h2></Reveal>
           <div className="intro-bottom">
             <span className="intro-coordinate">ALWAYS CURIOUS / OPEN TO EVERYWHERE</span>
@@ -62,7 +62,7 @@ export function Home() {
 
         <section className="work-preview section-pad" id="work">
           <div className="section-heading">
-            <SectionLabel number="02 /">Selected explorations</SectionLabel>
+            <SectionLabel>Selected explorations</SectionLabel>
             <Reveal><h2>Work with<br /><em>something to say.</em></h2></Reveal>
             <p>Concept studies exploring the worlds we love to make.</p>
           </div>
@@ -73,7 +73,7 @@ export function Home() {
         </section>
 
         <section className="services section-pad">
-          <SectionLabel number="03 /">What we do</SectionLabel>
+          <SectionLabel>Ways we shape an idea</SectionLabel>
           <div className="services-layout">
             <Reveal className="services-intro">
               <h2>Every good idea deserves a world of its own<span className="accent-star">✳</span></h2>

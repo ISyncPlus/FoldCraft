@@ -12,7 +12,7 @@ export function Studio() {
       <NavBar route="/studio" />
       <main>
         <PageIntro
-          eyebrow="02 / The studio"
+          eyebrow="Inside Foldcraft"
           title={<>Curious minds.<br /><em>Considered craft.</em></>}
           description="Foldcraft is a creative practice for ideas that ask for a fresh perspective. We bring clarity to complexity and character to the details."
         />
@@ -20,7 +20,7 @@ export function Studio() {
           <Reveal><div className="studio-art"><div className="studio-circle" /><div className="studio-square" /><span>F / C</span><small>MAKE SPACE FOR NEW IDEAS</small></div></Reveal>
         </section>
         <section className="studio-story section-pad">
-          <SectionLabel number="01 /">Our perspective</SectionLabel>
+          <SectionLabel>Our perspective</SectionLabel>
           <div className="studio-story-grid">
             <Reveal><h2>Made to move<br />people <em>forward.</em></h2></Reveal>
             <Reveal delay={120}>
@@ -30,7 +30,7 @@ export function Studio() {
           </div>
         </section>
         <section className="principles section-pad">
-          <SectionLabel number="02 /">How we work</SectionLabel>
+          <SectionLabel>How we work</SectionLabel>
           <div className="principle-grid">
             {principles.map(({ title, description }, index) => (
               <Reveal delay={index * 90} key={title}>
